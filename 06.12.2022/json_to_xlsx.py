@@ -15,6 +15,6 @@ def json_cocktails_to_table():
     new_data['Instruction'] = instr
     new_data['Link to photo'] = img
     df = pd.DataFrame(new_data)   
-    df.to_excel('json_output/cocktails.xlsx', index=False)
+    df.to_excel('06.12.2022/cocktails.xlsx', index=False)
 
 json_cocktails_to_table()
