@@ -211,9 +211,4 @@ bin-release/
 /draft.py
 /.vscode
 
-
-
-
-/snake
 /draft
-/draft/shop.db
