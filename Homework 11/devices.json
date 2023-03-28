@@ -1,0 +1,67 @@
+{ 
+  "devices": [
+    {
+    "manufacturer": "Sennheiser",
+    "model": "HD 599",
+    "category": "headphones",
+    "price_byn": 582
+    },
+    {
+    "manufacturer": "Huawei",
+    "model": "Watch GT 3 Pro",
+    "category": "smart watches",
+    "price_byn": 794
+    },{
+    "manufacturer": "Apple",
+    "model": "iPad 10.2",
+    "category": "tablets",
+    "price_byn": 1118
+    },{
+    "manufacturer": "Hidizs",
+    "model": "AP80 Pro",
+    "category": "hi-fi players",
+    "price_byn": 550
+    },{
+    "manufacturer": "DJI",
+    "model": "Mini 3 Pro",
+    "category": "rc models",
+    "price_byn": 2948
+    },
+    {
+    "manufacturer": "Sony",
+    "model": "PlayStation 5",
+    "category": "consoles",
+    "price_byn": 1980
+    },
+    {
+    "manufacturer": "HTC",
+    "model": "Vive Cosmos Elite",
+    "category": "vr goggles",
+    "price_byn": 3811
+    },
+    {
+    "manufacturer": "Ninebot",
+    "model": "Kickscooter Max G30",
+    "category": "electric scooters",
+    "price_byn": 1929
+    },
+    {
+    "manufacturer": "Intel",
+    "model": "core i9-13900K",
+    "category": "processors",
+    "price_byn": 2021
+    },
+    {
+    "manufacturer": "Apple",
+    "model": "Macbook Air 13 M1",
+    "category": "laptops",
+    "price_byn": 3115
+    },
+    {
+    "manufacturer": "Sapphire",
+    "model": "Nitro+ Radeon RX 7900 XT Vapor-X",
+    "category": "GPUs",
+    "price_byn": 2021
+    }
+  ]
+}
