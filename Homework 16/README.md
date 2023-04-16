@@ -1,4 +1,4 @@
-## Homework 14 for Step IT "Python web" course
+## Homework 16 for Step IT "Python web" course
 ***
 ### Используя sqlite или sqlalchemy создать базу данных с шутками
 Заполнить ее.

@@ -1,4 +1,4 @@
-## Homework 14 for Step IT "Python web" course
+## Homework 15 for Step IT "Python web" course
 ***
 ### Используя SQL ALCHEMY создаем базу данных «Компьютерная фирма»
 * Найдите номер модели, скорость и размер жесткого диска для всех ПК

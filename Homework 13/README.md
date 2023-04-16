@@ -1,4 +1,4 @@
-## Homework 14 for Step IT "Python web" course
+## Homework 13 for Step IT "Python web" course
 ***
 ### Написать мини-конспект по теме:
 * Join-ы, виды и что они делают

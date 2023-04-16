@@ -1,4 +1,4 @@
-## Homework 14 for Step IT "Python web" course
+## Homework 12 for Step IT "Python web" course
 ***
 Наша задача — создать таблицу с любимыми книгами только при
 условии ее отсутствия. Для этого потребуется выполнить 2 запроса
