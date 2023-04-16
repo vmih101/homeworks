@@ -8,24 +8,42 @@ class Database():
         self.cur = self.con.cursor()
 
     def create_table_dishes_list(self):
-        self.cur.execute('CREATE TABLE IF NOT EXISTS dishes_list(dish_id INTEGER PRIMARY KEY, title TEXT, receipt TEXT)')
+        self.cur.execute('CREATE TABLE IF NOT EXISTS dishes_list('
+                         'dish_id INTEGER PRIMARY KEY,'
+                         'title TEXT, '
+                         'receipt TEXT)')
         self.con.commit()
 
     def create_table_ingredients_list(self):
-        self.cur.execute('CREATE TABLE IF NOT EXISTS ingredients_list(ingredient_id INTEGER PRIMARY KEY, title TEXT UNIQUE)')
+        self.cur.execute('CREATE TABLE IF NOT EXISTS ingredients_list('
+                         'ingredient_id INTEGER PRIMARY KEY,'
+                         'title TEXT UNIQUE)')
         self.con.commit()
 
     def create_table_measurement(self):
-        self.cur.execute('CREATE TABLE IF NOT EXISTS measurement(unit_id INTEGER PRIMARY KEY, title TEXT UNIQUE)')
+        self.cur.execute('CREATE TABLE IF NOT EXISTS measurement('
+                         'unit_id INTEGER PRIMARY KEY,'
+                         'title TEXT UNIQUE)')
         self.con.commit()
 
     def create_table_calorie(self):
-        self.cur.execute('CREATE TABLE IF NOT EXISTS calorie(dish_id INTEGER, proteins INTEGER, fats INTEGER, carbohydrates INTEGER, calorie INTEGER, FOREIGN KEY (dish_id) REFERENCES dishes_list(dish_id))')
+        self.cur.execute('CREATE TABLE IF NOT EXISTS calorie('
+                         'dish_id INTEGER,'
+                         'proteins INTEGER,'
+                         'fats INTEGER,'
+                         'carbohydrates INTEGER,'
+                         'calorie INTEGER, FOREIGN KEY (dish_id) REFERENCES dishes_list(dish_id))')
         self.con.commit()
 
     def create_table_grocery_list(self):
-        self.cur.execute('CREATE TABLE IF NOT EXISTS grocery_list(dish_id INTEGER, ingredient_id INTEGER, value INTEGER,'
-                         ' unit_id INTEGER, FOREIGN KEY (dish_id) REFERENCES dishes_list(dish_id), FOREIGN KEY (ingredient_id) REFERENCES ingredients_list(ingredient_id), FOREIGN KEY (unit_id) REFERENCES measurement(unit_id))')
+        self.cur.execute('CREATE TABLE IF NOT EXISTS grocery_list('
+                         'dish_id INTEGER,'
+                         'ingredient_id INTEGER,'
+                         'value INTEGER,'
+                         'unit_id INTEGER, '
+                         'FOREIGN KEY (dish_id) REFERENCES dishes_list(dish_id),'
+                         'FOREIGN KEY (ingredient_id) REFERENCES ingredients_list(ingredient_id),'
+                         'FOREIGN KEY (unit_id) REFERENCES measurement(unit_id))')
         self.con.commit()
 
     def create_view_full_receipt(self):
@@ -67,7 +85,6 @@ class Database():
 
     def insert_receipt(self):
         data = self.json_receipt()
-        print(data['dishes'][0]['calories'])
         for i in data['dishes']:
             self.con.execute('INSERT OR IGNORE INTO dishes_list VALUES (?, ?, ?)', (i['ID'], i['name'], i['receipt']))
             self.con.execute('INSERT OR IGNORE INTO calorie VALUES (?, ?, ?, ?, ?)',

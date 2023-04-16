@@ -1,0 +1,348 @@
+
+<!-- saved from url=(0048)https://sql-ex.ru/learn_exercises.php#answer_ref -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./product_files/usability.js"></script><script type="text/javascript" async="" src="./product_files/watch.js"></script><script type="text/javascript" async="" src="./product_files/top100.js"></script><script>
+function spoiler(obj){
+//alert(document.cookie);
+if (obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+{ obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';
+document.cookie = "show=0";
+obj.innerHTML = 'Скрыть|Hide';
+obj.title = 'Скрыть|Hide'; }
+else { obj.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none';
+document.cookie = "show=1";
+obj.innerHTML = 'Показать|Show';
+obj.title = 'Показать|Show';}
+}
+</script>
+
+
+
+
+ 
+ <!-- Yandex Native Ads -->
+ <script>window.yaContextCb=window.yaContextCb||[]</script>
+ <script src="./product_files/context.js" async=""></script>
+ 
+<link rel="stylesheet" type="text/css" href="./product_files/letter.css">
+ <link rel="stylesheet" type="text/css" href="./product_files/hint.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Упражнения на оператор SELECT: обучающий этап</title>
+        <meta name="Description" content="Дистанционное обучение языку баз данных SQL. Интерактивные упражнения и тестирование по операторам SELECT,INSERT,UPDATE,DELETE, сертификация.">
+        <meta name="Keywords" content="интерактивные упражнения, оператор select, обучение sql, тестирование, сертификация, решение задач,язык sql,построение запросов">
+        <meta name="abstract" content="Решение задач по оператору SELECT, обучение, тестирование и сертификация по языку SQL">
+        <meta name="title" content="решение задач по оператору SELECT, тестирование и сертификация по языку SQL ">        <meta name="Robots" content="INDEX, FOLLOW">
+        <meta name="Classification" content="08,education,teaching,training">
+        <link rel="stylesheet" type="text/css" href="./product_files/style.css">
+        <script type="text/javascript" language="JavaScript" src="./product_files/main.js"></script>
+<script type="text/javascript" language="JavaScript" src="./product_files/hint.js"></script>
+<script type="text/javascript" src="./product_files/openapi.js"></script>
+<!-- karpov ads -->
+    <style>
+      .karpov-cources-ads {
+        display: block;
+        width: 240px;
+        height: 400px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    </style>
+<!-- end karpov ads -->
+
+</head>
+<body spellcheck="false" bgcolor="#F5F5F5">
+<a name="ref_beg"></a>
+<table width="100%" border="0" cellpadding="5" align="center">
+ <tbody><tr>
+  <td width="34%" bgcolor="#CCCCCC" valign="middle">
+        <a class="none" href="https://sql-ex.ru/"><b>Упражнения по SQL</b></a>
+
+  </td><td width="33%" bgcolor="#CCCCCC" align="center" valign="middle"><form name="frmtpl">
+Language&nbsp;<select name="lsttpl" style="background-color:#F5F5F5;" onchange="Sel_Lang(document.frmtpl.lsttpl.selectedIndex)"><option value="0" selected=""> Русский </option><option value="1"> English </option></select>
+ </form>
+  </td><td width="33%" bgcolor="#CCCCCC" align="right" valign="middle">
+April 05, 22:35 MSK &nbsp; &nbsp; <b><a class="none" href="https://sql-ex.ru/personal.php">Osheedrink</a></b>  <a href="https://sql-ex.ru/logout.php"><img border="0" width="17" height="18" src="./product_files/logout.gif" title="Выход..." alt="Выход..."></a><!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 718545,
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=718545" alt="???-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45900456 = new Ya.Metrika({
+                    id:45900456,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45900456" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  </td>
+</tr>
+</tbody></table>
+<noscript>
+ <table cellpadding="5" align="center"><tr><td valign="middle" bgcolor="#DD3030"><font color="white"><strong>Ресурс "Упражнения по SQL" ориентирован на приобретение практического опыта в написании запросов
+на языке манипуляции данными - <b>SQL DML</b>. На сайте имеются упражнения для начинающих, подкрепленные необходимым <a class="let" href="/help/">справочным материалом</a> по
+синтаксису языка SQL с большим числом примеров . Помимо этого, реализованы 3 рейтинговых этапа, предназначенных для <b>тестирования специалистов и
+сертификации</b>. Ресурс полностью бесплатный, а приобретение сертификатов является делом добровольным.
+<br>ВНИМАНИЕ: для корректной работы сайта браузер должен разрешать использование Cookie и JavaScript.
+<br>Поскольку страницы справки открываются в подчиненном окне, ваш Web-фильтр, если он используется, должен разрешать открытие подчиненных окон.</strong></font></td></tr></table>
+</noscript><script type="text/javascript" language="JavaScript" src="./product_files/lang.js"></script>
+<script type="text/javascript" language="JavaScript" src="./product_files/ex.js"></script>
+<script type="text/javascript" language="JavaScript" src="./product_files/script.js"></script>
+
+<table width="100%" border="0" cellpadding="5" align="center" valign="middle">
+<tbody><tr><td colspan="3" bgcolor="#9f9960" valign="middle" align="left">
+<b>Краткая информация о базе данных "Компьютерная фирма":</b><br><br>
+<div><div>
+<a class="let" href="https://sql-ex.ru/learn_exercises.php###" style="text-decoration: none; font-size: 15px" title="Скрыть|Hide" onclick="spoiler(this);"> Скрыть|Hide</a>
+</div><div><div style="display: &#39;&#39;;">
+Схема БД состоит из четырех таблиц:<br>
+Product(maker, model, type)<br>
+PC(code, model, speed, ram, hd, cd, price)<br>
+Laptop(code, model, speed, ram, hd,  price, screen)<br>
+Printer(code, model, color, type, price)<br>
+Таблица Product представляет производителя (maker), номер модели (model) и тип ('PC' - ПК, 'Laptop' - ПК-блокнот или 'Printer' - принтер). Предполагается, что номера моделей в таблице Product уникальны для всех производителей и типов продуктов. В таблице PC для каждого ПК, однозначно определяемого уникальным кодом – code, указаны модель – model (внешний ключ к таблице Product), скорость - speed (процессора в мегагерцах), объем памяти - ram (в мегабайтах), размер диска - hd (в гигабайтах), скорость считывающего устройства - cd (например, '4x') и цена - price (в долларах). Таблица Laptop аналогична таблице РС за исключением того, что вместо скорости CD содержит размер экрана -screen (в дюймах). В таблице Printer для каждой модели принтера указывается, является ли он цветным - color ('y', если цветной), тип принтера - type (лазерный – 'Laser', струйный – 'Jet' или матричный – 'Matrix') и цена - price.<br>
+<br><br>
+<a class="let" href="javascript:openHelp(&#39;/help/select13.php#db_1&#39;)">Схема базы данных</a>
+</div></div></div>
+</td></tr>
+<tr>
+<td width="33%" rowspan="2" bgcolor="#9f9960" align="center" valign="middle">
+<form name="frmN" action="https://sql-ex.ru/learn_exercises.php" method="post">
+<!--форма выбора номера задания-->N <select id="LN" name="LN" style="background-color:#AAD52B;" onchange="learnSelPickEx(1)"><option value="1" selected="">1 (1) </option><option value="2">2 (1) </option><option value="3">3 (1) </option><option value="4">4 (1) </option><option value="5">5 (1) </option><option value="6">6 (2) </option><option value="7">7 (2) </option><option value="8">8 (2) </option><option value="9">9 (1) </option><option value="10">10 (1) </option><option value="11">11 (1) </option><option value="12">12 (1) </option><option value="13">13 (1) </option><option value="14">14 (2) </option><option value="15">15 (2) </option><option value="16">16 (2) </option><option value="17">17 (2) </option><option value="18">18 (2) </option><option value="19">19 (1) </option><option value="20">20 (2) </option><option value="21">21 (1) </option><option value="22">22 (1) </option><option value="23">23 (2) </option><option value="24">24 (2) </option><option value="25">25 (2) </option><option value="26">26 (2) </option><option value="27">27 (2) </option><option value="28">28 (2) </option><option value="29">29 (2) </option><option value="30">30 (2) </option><option value="31">31 (1) </option><option value="32">32 (3) </option><option value="33">33 (1) </option><option value="34">34 (2) </option><option value="35">35 (2) </option><option value="36">36 (2) </option><option value="37">37 (2) </option><option value="38">38 (1) </option><option value="39">39 (2) </option><option value="40">40 (2) </option><option value="41">41 (2) </option><option value="42">42 (1) </option><option value="43">43 (2) </option><option value="44">44 (1) </option><option value="45">45 (1) </option><option value="46">46 (2) </option><option value="47">47 (3) </option><option value="48">48 (2) </option><option value="49">49 (1) </option><option value="50">50 (1) </option><option value="51">51 (3) </option><option value="52">52 (2) </option><option value="53">53 (2) </option><option value="54">54 (2) </option><option value="55">55 (2) </option><option value="56">56 (2) </option><option value="57">57 (3) </option><option value="58">58 (3) </option><option value="59">59 (2) </option><option value="60">60 (2) </option><option value="61">61 (2) </option><option value="62">62 (1) </option><option value="63">63 (2) </option><option value="64">64 (2) </option><option value="65">65 (3) </option><option value="66">66 (2) </option><option value="67">67 (2) </option><option value="68">68 (2) </option><option value="69">69 (3) </option><option value="70">70 (2) </option><option value="71">71 (2) </option><option value="72">72 (2) </option><option value="73">73 (2) </option><option value="74">74 (2) </option><option value="75">75 (2) </option><option value="76">76 (2) </option><option value="77">77 (2) </option><option value="78">78 (2) </option><option value="79">79 (2) </option><option value="80">80 (2) </option><option value="81">81 (2) </option><option value="82">82 (2) </option><option value="83">83 (2) </option><option value="84">84 (2) </option><option value="85">85 (2) </option><option value="86">86 (2) </option><option value="87">87 (2) </option><option value="88">88 (2) </option><option value="89">89 (1) </option><option value="90">90 (2) </option><option value="91">91 (2) </option><option value="92">92 (2) </option><option value="93">93 (2) </option><option value="94">94 (2) </option><option value="95">95 (2) </option><option value="96">96 (2) </option><option value="97">97 (3) </option><option value="98">98 (3) </option><option value="99">99 (3) </option><option value="100">100 (2) </option><option value="101">101 (3) </option><option value="102">102 (2) </option><option value="103">103 (2) </option><option value="104">104 (2) </option><option value="105">105 (2) </option><option value="106">106 (2) </option><option value="107">107 (1) </option><option value="108">108 (2) </option><option value="109">109 (2) </option><option value="110">110 (2) </option><option value="111">111 (2) </option><option value="112">112 (3) </option><option value="113">113 (2) </option><option value="114">114 (2) </option><option value="115">115 (2) </option><option value="116">116 (2) </option><option value="117">117 (2) </option><option value="118">118 (2) </option><option value="119">119 (2) </option><option value="120">120 (2) </option><option value="121">121 (2) </option><option value="122">122 (2) </option><option value="123">123 (2) </option><option value="124">124 (2) </option><option value="125">125 (2) </option><option value="126">126 (2) </option><option value="127">127 (3) </option><option value="128">128 (2) </option><option value="129">129 (2) </option><option value="130">130 (2) </option><option value="131">131 (2) </option><option value="132">132 (2) </option><option value="133">133 (2) </option><option value="134">134 (2) </option><option value="135">135 (1) </option><option value="136">136 (2) </option><option value="137">137 (2) </option><option value="138">138 (4) </option><option value="139">139 (2) </option><option value="140">140 (2) </option><option value="141">141 (2) </option><option value="142">142 (2) </option><option value="143">143 (2) </option><option value="144">144 (2) </option><option value="145">145 (2) </option><option value="146">146 (2) </option><option value="147">147 (1) </option><option value="148">148 (2) </option><option value="149">149 (1) </option><option value="150">150 (2) </option><option value="151">151 (3) </option><option value="152">152 (2) </option><option value="153">153 (3) </option><option value="154">154 (3) </option><option value="155">155 (2) </option><option value="156">156 (2) </option><option value="157">157 (4) </option><option value="158">158 (3) </option><option value="159">159 (4) </option><option value="160">160 (3) </option><option value="161">161 (2) </option><option value="162">162 (1) </option><option value="171">171 (1) </option><option value="172">172 (1) </option><option value="173">173 (1) </option><option value="174">174 (1) </option><option value="175">175 (1) </option><option value="176">176 (1) </option><option value="177">177 (1) </option><option value="178">178 (1) </option><option value="179">179 (1) </option><option value="180">180 (2) </option><option value="181">181 (1) </option><option value="182">182 (1) </option><option value="183">183 (1) </option><option value="184">184 (1) </option><option value="185">185 (1) </option><option value="186">186 (1) </option><option value="187">187 (1) </option><option value="188">188 (1) </option><option value="189">189 (2) </option><option value="190">190 (1) </option></select>
+</form>
+<b>Задание:&nbsp;1 (<a class="let" href="https://sql-ex.ru/users_page.php?username=Serge%20I">Serge I</a>: 2002-09-30)</b><br><!-- Задание: -->
+Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd
+<p><br></p><center></center><p align="left">
+
+<b>&nbsp;·</b> Справка по теме:<br>&nbsp;&nbsp;&nbsp; <a class="let" href="http://www.sql-tutorial.ru/ru/book_simple_select_statement/page1.html" target="_blank">Простой оператор SELECT</a><br><br><b>&nbsp;·</b> Обсуждение упражнения на <a class="let" href="https://sql-ex.ru/forum/Lforum.php?F=3&amp;N=1">форуме</a>.<br><b>&nbsp;·</b> Анализ <a class="let" href="https://sql-ex.ru/perfcon.php?LN=1">плана выполнения</a> решения.<br>
+   <script type="text/javascript">
+		var title = 'Подcказки к задаче №1';
+		var text = 'По этой задаче еще нет подсказок.';
+</script><a class="info_not" title="Подcказки к задаче №1" onclick="hint_show();"></a></p></td>
+<form action="https://sql-ex.ru/learn_exercises.php#answer_ref" method="post" name="frmAnswer" onsubmit="this.cmdanswer.disabled=true;"></form>
+<!--форма вывода ответа от пользователя-->
+<td width="50%" colspan="2" bgcolor="#9f9960" align="center" valign="middle">
+<b>Запрос:</b><br>
+<!-- всплывающая подсказка -->
+<div style="DISPLAY: none">
+<div id="oToolTip">
+ <div id="oToolTipText" style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; FONT-SIZE: 70%; BORDER-LEFT: #808080 1px solid; COLOR: #700050; BORDER-BOTTOM: #808080 1px solid; FONT-FAMILY: Monospace">
+ </div>
+</div>
+</div>
+ <table cellpadding="0" cellspacing="0" border="0">
+  <tbody><tr><td>
+<textarea ondblclick="ResizeTextarea(0)" name="txtsql" id="txtsql" rows="15" cols="64" onkeyup="if (CHB.checked) return autorep();" onkeydown="return TabFuncDML(event);" style="background-color:#F5F5F5;height:250px;width:600px">select * from product order by 3, 1
+</textarea>
+  </td><td valign="top">
+   <input title="Очистить поле ввода" type="button" value="cls" onclick="Cls()" style="width:40"><br>
+   <input title="Развернутый вид поля ввода" type="button" value="max" onclick="ResizeTextarea(1)" style="width:40">
+ </td></tr></tbody></table>
+</td></tr>
+<tr>
+<td width="30%" bgcolor="#9f9960" align="left" valign="top">
+   <input type="hidden" name="checkMe" value="1">
+   <input type="submit" style="width:150;" name="cmdanswer" value="Выполнить (Ctrl+Enter)" onclick="return CheckSelSyntax3(frmAnswer.txtsql.value)">&nbsp;Tab≡Ctrl+Shift+пробел
+   <input type="checkbox" style="color:#F5F5F5;" id="wo" name="wo" value="1" checked="">
+   <label for="wo" type="text" size="20" id="wo_text" style="font-weight: bold; BORDER: 0px; FONT-SIZE: 98%; FONT-FAMILY: Monospace; background: " #f5f5f5""="">Без проверки</label>
+  <br>
+  <input type="hidden" id="CHB" name="CHB" value="1" checked="" onclick="onchanged();"> <!-- type="CheckBox" -->
+  <!-- <label type=CheckBox type="text" size=55 id="help_text" name="help_text" style="font-weight: bold; BORDER: 0px; FONT-SIZE: 98%; FONT-FAMILY: Monospace; background: "#F5F5F5"">
+  <script type="text/javascript" LANGUAGE="JavaScript">
+  if(document.frmAnswer.CHB.checked)document.write(str_avto_yes); else document.write(str_avto)</script></label>-->
+  </td>
+
+<td width="20%" bgcolor="#9F9960" align="left" valign="top">
+<!-- форма для вывода правильного результата -->
+   <form action="https://sql-ex.ru/learn_exercises.php#answer_ref" method="post" name="frmRes" onsubmit="document.frmRes.wo.value=document.frmAnswer.wo.checked; this.cmdOKres.disabled=true;">
+   <input type="submit" style="width:290;" name="cmdOKres" value="Показать правильный результат" onclick="ShowTrueRes()">
+   <input type="hidden" name="showOKres" value="1">
+   <input type="hidden" name="CHB">
+   <input type="hidden" name="txtsql">
+   <input type="hidden" name="wo">
+   </form>
+</td></tr>
+</tbody></table>
+<div id="divRating">
+Текущий рейтинг
+<br>﻿<form action="https://auth.robokassa.ru/Merchant/Index.aspx" method="POST">
+	  <input type="hidden" name="MerchantLogin" value="SQL-Ex">
+      <input type="hidden" name="OutSum" value="300.00">
+      <input type="hidden" name="InvId" value="655209">
+      <input type="hidden" name="Description" value="Доступ к рейтингу обучающего этапа">
+      <input type="hidden" name="SignatureValue" value="d87f5db1215caeb8c5e3783716623483">
+      <input type="hidden" name="Shp_item" value="R">
+	  <input type="hidden" name="Receipt" value="%7B%22sno%22%3A%22usn_income%22%2C%22items%22%3A%5B%7B%22name%22%3A%22%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF+%D0%BA+%D1%80%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3%D1%83+%D0%BE%D0%B1%D1%83%D1%87%D0%B0%D1%8E%D1%89%D0%B5%D0%B3%D0%BE+%D1%8D%D1%82%D0%B0%D0%BF%D0%B0%22%2C%22quantity%22%3A1%2C%22sum%22%3A300%2C%22payment_object%22%3A%22service%22%2C%22tax%22%3A%22none%22%7D%5D%7D">
+      <input type="hidden" name="IncCurrLabel" value="">
+      <input type="hidden" name="Culture" value="ru">
+      <input type="submit" value="₽ Оплатить картой 
+российского банка" title="Банки России и Беларуси">
+      </form><span> <a class="let" href="https://sql-ex.ru/faq.php#f27">Подробнее...</a> </span> <br><br><!-- Yandex.RTB R-A-184442-7 -->
+<div id="yandex_rtb_R-A-184442-7"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: "yandex_rtb_R-A-184442-7",
+    blockId: "R-A-184442-7"
+  })
+})</script></div><div style="height:350px;overflow: auto;"><br><br><a name="answer_ref"></a><h3>Результат выполнения Вашего запроса:</h3><table class="st" cellpadding="5" align="center"><tbody><tr><th>maker</th><th>model</th><th>type</th></tr>
+<tr><td class="dt1">A</td><td class="dt1">1298</td><td class="dt1">Laptop</td></tr>
+<tr><td class="dt0">A</td><td class="dt0">1752</td><td class="dt0">Laptop</td></tr>
+<tr><td class="dt1">B</td><td class="dt1">1750</td><td class="dt1">Laptop</td></tr>
+<tr><td class="dt0">C</td><td class="dt0">1321</td><td class="dt0">Laptop</td></tr>
+<tr><td class="dt1">A</td><td class="dt1">1232</td><td class="dt1">PC</td></tr>
+<tr><td class="dt0">A</td><td class="dt0">1233</td><td class="dt0">PC</td></tr>
+<tr><td class="dt1">B</td><td class="dt1">1121</td><td class="dt1">PC</td></tr>
+<tr><td class="dt0">E</td><td class="dt0">2112</td><td class="dt0">PC</td></tr>
+<tr><td class="dt1">E</td><td class="dt1">2113</td><td class="dt1">PC</td></tr>
+<tr><td class="dt0">E</td><td class="dt0">1260</td><td class="dt0">PC</td></tr>
+<tr><td class="dt1">A</td><td class="dt1">1276</td><td class="dt1">Printer</td></tr>
+<tr><td class="dt0">A</td><td class="dt0">1401</td><td class="dt0">Printer</td></tr>
+<tr><td class="dt1">A</td><td class="dt1">1408</td><td class="dt1">Printer</td></tr>
+<tr><td class="dt0">D</td><td class="dt0">1433</td><td class="dt0">Printer</td></tr>
+<tr><td class="dt1">D</td><td class="dt1">1288</td><td class="dt1">Printer</td></tr>
+<tr><td class="dt0">E</td><td class="dt0">1434</td><td class="dt0">Printer</td></tr>
+</tbody></table></div> <table><tbody><tr>
+<td align="left" width="10%">
+	<!-- <div id="ambn43618"></div>  -->
+</td> <td align="right" width="60%"> 
+<!-- Yandex.RTB R-A-184442-1 -->
+<div id="yandex_rtb_R-A-184442-1"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-184442-1',
+    blockId: 'R-A-184442-1'
+  })
+})</script>
+</td>
+</tr></tbody></table><!-- <div style="float:left"> -->
+<table>
+<tbody><tr></tr>
+        <tr align="middle" height="20">
+                <td align="center" valign="top" width="8%" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#DDDDDD&#39;"><a href="https://sql-ex.ru/" rel="nofollow" style="font-size: 8pt;">Начало</a><br>
+                <a href="https://sql-ex.ru/last-news-letter.php" style="font-size: 8pt;">Текущие новости</a>
+                </td>
+
+        <td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#E6FFFF&#39;">
+        <div><img name="imgcertf" border="0" src="./product_files/blueup.gif"><a style="color:#004848;" href="javascript:changeSt(&#39;certf&#39;)" onmouseout="" onmouseover=""><b>Сертификация</b></a></div>
+        <div title="Сертификация" id="certf" name="certf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none; position:relative;">
+&nbsp;&nbsp;•&nbsp; <a class="menu" href="https://sql-ex.ru/certification/certification.php">О сертификатах</a><br>&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/users_page.php?cs=4">Сертифицированные специалисты</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/certificate_statistics.php">Статистика</a>
+        </div></td>
+        <td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#FFFFE6&#39;">
+        <div><img name="imgexef" border="0" src="./product_files/blueup.gif"><a style="color:#FF8040;" href="javascript:changeSt(&#39;exef&#39;)" onmouseout="" onmouseover=""><b>Упражнения по SQL</b></a></div>
+        <div title="Упражнения по SQL" id="exef" name="exef" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/learn_exercises.php">SELECT&nbsp;(обучающий&nbsp;этап)</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/exercises/index.php?act=learn">SELECT (обуч., выбор СУБД)</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/exercises.php">SELECT&nbsp;(рейтинговые&nbsp;этапы)</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/dmlexercises.php">DML&nbsp;</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/modquer/">Моделирование данных</a>
+        </div></td>
+<td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#ECFFEC&#39;">
+        <div><img name="imgforf" border="0" src="./product_files/blueup.gif"><a style="color:#008000;" href="javascript:changeSt(&#39;forf&#39;)" onmouseout="" onmouseover=""><b>Форумы</b></a></div>
+        <div title="Форумы" id="forf" name="forf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/forum/Lforum.php">Форум&nbsp;обучающего&nbsp;этапа</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/forum/forum.php">Форум&nbsp;рейтинговых&nbsp;этапов</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/favorites/">Избранное</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/forum/search/">Поиск</a>
+        </div></td>
+		
+<td width="12%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#FFECEC&#39;">
+        <div><img name="imgratf" border="0" src="./product_files/blueup.gif"><a style="color:#FF0000;" href="javascript:changeSt(&#39;ratf&#39;)" onmouseout="" onmouseover=""><b>Рейтинги</b></a></div>
+        <div title="Рейтинги" id="ratf" name="ratf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/rating.php">100 лучших результатов</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/rating_day.php">Статистика за сегодня</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/leaders.php">Текущие показатели лидеров</a>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/quest_rating_median.php">Рейтинг&nbsp;задач&nbsp;второго&nbsp;этапа (медиана)</a><br>
+        </div></td>
+<td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#FFECD9&#39;">
+        <div><img name="imghelpf" border="0" src="./product_files/blueup.gif"><a style="color:#800000;" href="javascript:changeSt(&#39;helpf&#39;)" onmouseout="" onmouseover=""><b>Помощь</b></a></div>
+        <div title="Помощь" id="helpf" name="helpf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/help/" onclick="openHelp();return false;">Справка&nbsp;по&nbsp;SQL(DML)</a><br>
+&nbsp;&nbsp;•&nbsp;<noindex><a class="menu" href="http://sql-tutorial.ru/content.html" target="_blank">Учебник по SQL</a></noindex><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/faq.php">FAQ</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/developers.php">Запрос&nbsp;в&nbsp;поддержку</a><br>
+&nbsp;&nbsp;•&nbsp;<noindex><a class="menu" href="http://www.sqlbooks.ru/">Книги и статьи</a></noindex>
+        </div></td>
+
+<td width="10%" align="left" valign="top" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#DAE4E0&#39;">
+        <div><img name="imgperf" border="0" src="./product_files/blueup.gif"><a style="color:#004000;" href="javascript:changeSt(&#39;perff&#39;)" onmouseout="" onmouseover=""><b>Оптимизация</b></a></div>
+        <div title="Оптимизация" id="perff" name="helpf" border="0" style="text-align:left; color:#0000FF; font-size:10px; display:none;position:relative;">
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/perfcon.php">План запроса</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/performance.php">Рейтинг по<br>стоимости запроса</a><br>
+&nbsp;&nbsp;•&nbsp;<a class="menu" href="https://sql-ex.ru/optimization/index.php">Конкурс по оптимизации</a>
+        </div></td>
+
+                <td align="center" valign="top" width="7%" onmouseout="this.style.backgroundColor=&#39;#F5F5F5&#39;" onmouseover="this.style.backgroundColor=&#39;#DDDDDD&#39;"><a href="https://sql-ex.ru/personal.php" style="font-size: 8pt;">Профиль</a>
+                <br><a href="https://sql-ex.ru/links.php" style="font-size: 8pt;">Ссылки</a></td>
+</tr></tbody></table>
+<!-- </div> -->
+<noindex>
+<table width="100%" border="0" align="center">
+    <tbody><tr bgcolor="#CCCCCC" valign="middle">
+        <td align="left" width="30%">
+<!--		<td align="left" width="367"> -->
+<!--LiveInternet counter--><script language="JavaScript"><!--
+document.write('<a rel="nofollow" href="http://www.liveinternet.ru/click" '+
+'target="_blank"><img src="https://counter.yadro.ru/hit?t16.2;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';'+Math.random()+'" title="liveinternet.ru: число просмотров и посетителей за сутки и за сегодня" border="0" width="88" height="31"></a>')//--></script><a rel="nofollow" href="http://www.liveinternet.ru/click" target="_blank"><img src="./product_files/hit" title="liveinternet.ru: число просмотров и посетителей за сутки и за сегодня" border="0" width="88" height="31"></a>
+<!--/LiveInternet-->
+
+
+</td><td align="right">
+
+Copyright SQL-EX © 2002-2023. All rights reserved. <br>
+<a href="mailto:support@sql-ex.ru"> contact </a>
+</td></tr>
+</tbody></table>
+</noindex>
+<!-- </DIV>  -->
+</body></html>
