@@ -1,11 +1,9 @@
 ## Homework 19 for Step IT "Python web" course
 ***
-### Используя sqlite или sqlalchemy создать базу данных с шутками
-Заполнить ее.
-У бота сделать 2 команды
-/joke - случайную выводит шутку из базы
-/add_joke - записывает вашу шутку в базу
+* Опираясь на https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+сделать краткий конспект по flexbox
+* Пройти flex frog
+* Cверстать: 
+  * ![image](https://i.ibb.co/BTfpjbC/template-1.jpg "Макет_1")
+  * ![image](https://i.ibb.co/pw0Ys7n/template-2.jpg"  "Макет_2")
 ***
-### How to run it ?
-* Launch "parser.py" to create the database, tables, parse and insert data
-* Launch "bot.py" to start the bot
