@@ -1,0 +1,43 @@
+body {
+    background-color: #C9A66B;
+}
+
+.block {
+    display: flex;
+    gap: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+.elem {
+    background-color: #EBDCB2;
+    border-radius: 5px;
+}
+
+.block-1__elem-1 {
+    width: 2%;
+}
+
+.block-1__elem-2 {
+    width: 78%;
+}
+
+.block-1__elem-3 {
+    width: 20%;
+}
+
+.block-2 {
+    margin-top: 5px;
+}
+
+.block-2__elem-1 {
+    width: 70%;
+}
+
+.block-2__elem-2 {
+    width: 20%;
+}
+
+.block-2__elem-3 {
+    width: 10%;
+}

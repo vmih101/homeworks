@@ -1,0 +1,43 @@
+body {
+    background-color: #1E434C;
+}
+
+.block {
+    display: flex;
+    gap: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+.elem {
+    background-color: #C99E10;
+    border-radius: 5px;
+}
+
+.block-1__elem-1 {
+    flex-grow: 1;
+}
+
+.block-1__elem-2 {
+    flex-grow: 2;
+}
+
+.block-1__elem-3 {
+    flex-grow: 1;
+}
+
+.block-2 {
+    margin-top: 5px;
+}
+
+.block-2__elem-1 {
+    flex-grow: 1;
+}
+
+.block-2__elem-2 {
+    flex-grow: 1;
+}
+
+.block-2__elem-3 {
+    flex-grow: 2;
+}
